@@ -42,20 +42,20 @@ MS SQL T-SQL Best Practices and Programming Guidelines:
 - All finished expressions should have `;` at the end.
 - The first argument in `SELECT` expression should be on the next line with it (see ex below).
 - Arguments are divided by line breaks, commas should be placed before an argument (see ex below).
-`
+```
 SELECT 
   FirstName
   ,LastName 
 FROM …
-`
+```
 - Use `TOP` function with brackets because `TOP` has supports use of an expression, such as `(@Rows*2)`, or a subquery:
 ` SELECT TOP(100) LastName …. `
 Also `TOP` without brackets does not work with ` UPDATE ` and ` DELETE ` statements.
-`
+```
 -- Not working without ()
 DECLARE @n int = 1;
 SELECT TOP@n name FROM sys.objects;
-`
+```
 - Keywords should be in UPPERCASE
 - Data types declaration should be in lowercase
 - ` FROM, WHERE, INTO, JOIN, GROUP BY, ORDER BY ` expressions should be aligned so, that all their arguments are placed under each other 
@@ -84,11 +84,11 @@ if it is not required in a specific case)
 - Avoid using shortname (`wk, yyyy, d ` etc.) with date/time operations, use full names: `month, day, year`
 - Parameters name should be in **camelCase**: `@textParam`
 - Dont duplicate ` DECLARE ` block, also dont use shortname for variables
-`
+```
 DECLARE
 @userName nvarchar(250), --but not @un or @n
 @userAge int; --but not @ua or @a
-`
+```
 - The procedure or function should begin with parameter check
 - Create sp_ procedures only in master database - SQL Server will always scan through the system catalog first
 - Always use `BEGIN TRY` and `BEGIN CATCH`, ALSO `BEGIN … END` AFTER `IF` or `ELSE`
