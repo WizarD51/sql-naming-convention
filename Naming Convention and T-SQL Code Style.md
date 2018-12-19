@@ -73,3 +73,5 @@ SELECT
  ORDER BY t2.Value2;
 ```
 - All objects must used with schema names but without database and server name: ``` FROM dbo.Table ```
+- Avoid using ``` INSERT INTO ``` a permanent table with ``` ORDER BY ```
+- Avoid using shortname (```wk, yyyy, d ``` etc.) with date/time operations, use full names: ```month, day, year```
