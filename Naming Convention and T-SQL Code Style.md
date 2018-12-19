@@ -1,6 +1,5 @@
 ## Naming Convention and T-SQL Code Style
-
-  Official Reference and useful links
+Official Reference and useful links
 
 ### MS SQL Object Naming Convention
 
