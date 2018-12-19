@@ -3,39 +3,39 @@ Official Reference and useful links
 
 ### MS SQL Object Naming Convention
 
-| Object |	Code |	Notation |	Length |	Plural |	Prefix |	Abbreviation | Mask |	Example |
-| ------ | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
-| Database	 | 	 | PascalCase	 | 30	 | No	 | No	 | Yes	 | [A-z]	 | MyDatabase |
-| Database Trigger	 | 	 | PascalCase	 | 50	 | No	 | TR_	 | Yes	 | [A-z]	 | TR_CheckLogin |
-| Schema	 | 	 | lowercase	 | 30	 | No	 | No	 | Yes	 | [A-z][0-9]	 | myschema |
-| File Table	 | 	 | PascalCase	 | 128	 | No	 | FT_	 | Yes	 | [A-z][0-9]	 | FT_MyTable |
-| Global Temporary Table	 | 	 | PascalCase	 | 117	 | No	 | No	 | Yes	 | ##[A-z][0-9]	 | ##MyTable |
-| Local Temporary Table	 | 	 | PascalCase	 | 116	 | No	 | No	 | Yes	 | #[A-z][0-9]	 | #MyTable |
-| Table	 | U	 | PascalCase	 | 128	 | No	 | No	 | Yes	 | [A-z][0-9]	 | MyTable |
-| Table Column	 | 	 | PascalCase	 | 128	 | No	 | No	 | Yes	 | [A-z][0-9]	 | MyColumn |
-| Table Default Values	 | D	 | PascalCase	 | 128	 | No	 | DF_	 | Yes	 | [A-z][0-9]	 | DF_MyTable_MyColumn |
-| Table Check Column Constraint	 | C	 | PascalCase	 | 128	 | No	 | CС_	 | Yes	 | [A-z][0-9]	 | CС_MyTable_MyColumn |
-| Table Check Table Constraint	 | C	 | PascalCase	 | 128	 | No	 | TС_	 | Yes	 | [A-z][0-9]	 | TС_MyTable_MyColumn_AnotherColumn |
-| Table Primary Key	 | PK	 | PascalCase	 | 128	 | No	 | PK_	 | Yes	 | [A-z][0-9]	 | PK_MyTableID |
-| Table Alternative Key	 | UQ	 | PascalCase	 | 128	 | No	 | AK_	 | Yes	 | [A-z][0-9]	 | AK_MyTable_MyColumn_AnotherColumn |
-| Table Foreign Key	 | F	 | PascalCase	 | 128	 | No	 | FK_	 | Yes	 | [A-z][0-9]	 | FK_MyTable_ForeignTableID |
-| Table Clustered Index	 | 	 | PascalCase	 | 128	 | No	 | IDX_C_	 | Yes	 | [A-z][0-9]	 | IDX_C_MyTable_MyColumn_AnotherColumn |
-| Table Non Clustered Index	 | 	 | PascalCase	 | 128	 | No	 | IDX_NC_	 | Yes	 | [A-z][0-9]	 | IDX_NC_MyTable_MyColumn_AnotherColumn |
-| Table Trigger	 | TR	 | PascalCase	 | 128	 | No	 | TR_	 | Yes	 | [A-z][0-9]	 | TR_MyTable_LogicalName |
-| View	 | V	 | PascalCase	 | 128	 | No	 | VW_	 | No	 | [A-z][0-9]	 | VW_LogicalName |
-| Stored Procedure	 | P	 | PascalCase	 | 128	 | No	 | usp_	 | No	 | [A-z][0-9]	 | usp_LogicalName |
-| Scalar User-Defined Function	 | FN	 | PascalCase	 | 128	 | No	 | udf_	 | No	 | [A-z][0-9]	 | udf_FunctionLogicalName |
-| Table-Valued Function	 | FN	 | PascalCase	 | 128	 | No	 | tvf_	 | No	 | [A-z][0-9]	 | tvf_FunctionLogicalName |
-| User-Defined Table Types	 | TT	 | PascalCase	 | 128	 | No	 | TT_	 | No	 | [A-z][0-9]	 | TT_LogicalName |
-| Synonym	 | SN	 | camelCase	 | 128	 | No	 | sy_	 | No	 | [A-z][0-9]	 | sy_logicalName |
-| Sequence	 | SO	 | PascalCase	 | 128	 | No	 | sq_	 | No	 | [A-z][0-9]	 | sq_TableName |
-| CLR Assembly	 | 	 | PascalCase	 | 128	 | No	 | CA	 | Yes	 | [A-z][0-9]	 | CALogicalName |
-| CLR Stored Procedures	 | PC	 | PascalCase	 | 128	 | No	 | pc_	 | Yes	 | [A-z][0-9]	 | pc_CAName_LogicalName |
-| CLR Scalar User-Defined Function	 | 	 | PascalCase	 | 128	 | No	 | cudf_	 | No	 | [A-z][0-9]	 | cudf_CAName_LogicalName |
-| CLR Table-Valued Function	 | 	 | PascalCase	 | 128	 | No	 | ctvf_	 | No	 | [A-z][0-9]	 | ctvf_CAName_LogicalName |
-| CLR User-Defined Aggregates	 | 	 | PascalCase	 | 128	 | No	 | ca_	 | No	 | [A-z][0-9]	 | ca_CAName_LogicalName |
-| CLR User-Defined Types	 | 	 | PascalCase	 | 128	 | No	 | ct_	 | No	 | [A-z][0-9]	 | ct_CAName_LogicalName |
-| CLR Triggers	 | 	 | PascalCase	 | 128	 | No	 | ctr_	 | No	 | [A-z][0-9]	 | ctr_CAName_LogicalName |
+| <sub>Object</sub>	| <sub>Code</sub>	| <sub>Notation</sub>	| <sub>Length</sub>	| <sub>Plural</sub>	| <sub>Prefix</sub>	| <sub>Abbreviation</sub>	| <sub>Char Mask</sub>	 | <sub>Example</sub> |
+| ------ | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 					
+| <sub>Database</sub>	| <sub></sub>	| <sub>PascalCase</sub>	| <sub>30</sub>	| <sub>No</sub>	| <sub>No</sub>	| <sub>Yes</sub>	| <sub>[A-z]</sub>	 | <sub>MyDatabase</sub> |
+| <sub>Database Trigger</sub>	| <sub></sub>	| <sub>PascalCase</sub>	| <sub>50</sub>	| <sub>No</sub>	| <sub>TR_</sub>	| <sub>Yes</sub>	| <sub>[A-z]</sub>	 | <sub>TR_CheckLogin</sub> |
+| <sub>Schema</sub>	| <sub></sub>	| <sub>lowercase</sub>	| <sub>30</sub>	| <sub>No</sub>	| <sub>No</sub>	| <sub>Yes</sub>	| <sub>[A-z][0-9]</sub>	 | <sub>myschema</sub> |
+| <sub>File Table</sub>	| <sub></sub>	| <sub>PascalCase</sub>	| <sub>128</sub>	| <sub>No</sub>	| <sub>FT_</sub>	| <sub>Yes</sub>	| <sub>[A-z][0-9]</sub>	 | <sub>FT_MyTable</sub> |
+| <sub>Global Temporary Table</sub>	| <sub></sub>	| <sub>PascalCase</sub>	| <sub>117</sub>	| <sub>No</sub>	| <sub>No</sub>	| <sub>Yes</sub>	| <sub>##[A-z][0-9]</sub>	 | <sub>##MyTable</sub> |
+| <sub>Local Temporary Table</sub>	| <sub></sub>	| <sub>PascalCase</sub>	| <sub>116</sub>	| <sub>No</sub>	| <sub>No</sub>	| <sub>Yes</sub>	| <sub>#[A-z][0-9]</sub>	 | <sub>#MyTable</sub> |
+| <sub>Table</sub>	| <sub>U</sub>	| <sub>PascalCase</sub>	| <sub>128</sub>	| <sub>No</sub>	| <sub>No</sub>	| <sub>Yes</sub>	| <sub>[A-z][0-9]</sub>	 | <sub>MyTable</sub> |
+| <sub>Table Column</sub>	| <sub></sub>	| <sub>PascalCase</sub>	| <sub>128</sub>	| <sub>No</sub>	| <sub>No</sub>	| <sub>Yes</sub>	| <sub>[A-z][0-9]</sub>	 | <sub>MyColumn</sub> |
+| <sub>Table Default Values</sub>	| <sub>D</sub>	| <sub>PascalCase</sub>	| <sub>128</sub>	| <sub>No</sub>	| <sub>DF_</sub>	| <sub>Yes</sub>	| <sub>[A-z][0-9]</sub>	 | <sub>DF_MyTable_MyColumn</sub> |
+| <sub>Table Check Column Constraint</sub>	| <sub>C</sub>	| <sub>PascalCase</sub>	| <sub>128</sub>	| <sub>No</sub>	| <sub>CС_</sub>	| <sub>Yes</sub>	| <sub>[A-z][0-9]</sub>	 | <sub>CС_MyTable_MyColumn</sub> |
+| <sub>Table Check Table Constraint</sub>	| <sub>C</sub>	| <sub>PascalCase</sub>	| <sub>128</sub>	| <sub>No</sub>	| <sub>TС_</sub>	| <sub>Yes</sub>	| <sub>[A-z][0-9]</sub>	 | <sub>TС_MyTable_MyColumn_AnotherColumn</sub> |
+| <sub>Table Primary Key</sub>	| <sub>PK</sub>	| <sub>PascalCase</sub>	| <sub>128</sub>	| <sub>No</sub>	| <sub>PK_</sub>	| <sub>Yes</sub>	| <sub>[A-z][0-9]</sub>	 | <sub>PK_MyTableID</sub> |
+| <sub>Table Alternative Key</sub>	| <sub>UQ</sub>	| <sub>PascalCase</sub>	| <sub>128</sub>	| <sub>No</sub>	| <sub>AK_</sub>	| <sub>Yes</sub>	| <sub>[A-z][0-9]</sub>	 | <sub>AK_MyTable_MyColumn_AnotherColumn</sub> |
+| <sub>Table Foreign Key</sub>	| <sub>F</sub>	| <sub>PascalCase</sub>	| <sub>128</sub>	| <sub>No</sub>	| <sub>FK_</sub>	| <sub>Yes</sub>	| <sub>[A-z][0-9]</sub>	 | <sub>FK_MyTable_ForeignTableID</sub> |
+| <sub>Table Clustered Index</sub>	| <sub></sub>	| <sub>PascalCase</sub>	| <sub>128</sub>	| <sub>No</sub>	| <sub>IDX_C_</sub>	| <sub>Yes</sub>	| <sub>[A-z][0-9]</sub>	 | <sub>IDX_C_MyTable_MyColumn_AnotherColumn</sub> |
+| <sub>Table Non Clustered Index</sub>	| <sub></sub>	| <sub>PascalCase</sub>	| <sub>128</sub>	| <sub>No</sub>	| <sub>IDX_NC_</sub>	| <sub>Yes</sub>	| <sub>[A-z][0-9]</sub>	 | <sub>IDX_NC_MyTable_MyColumn_AnotherColumn</sub> |
+| <sub>Table Trigger</sub>	| <sub>TR</sub>	| <sub>PascalCase</sub>	| <sub>128</sub>	| <sub>No</sub>	| <sub>TR_</sub>	| <sub>Yes</sub>	| <sub>[A-z][0-9]</sub>	 | <sub>TR_MyTable_LogicalName</sub> |
+| <sub>View</sub>	| <sub>V</sub>	| <sub>PascalCase</sub>	| <sub>128</sub>	| <sub>No</sub>	| <sub>VW_</sub>	| <sub>No</sub>	| <sub>[A-z][0-9]</sub>	 | <sub>VW_LogicalName</sub> |
+| <sub>Stored Procedure</sub>	| <sub>P</sub>	| <sub>PascalCase</sub>	| <sub>128</sub>	| <sub>No</sub>	| <sub>usp_</sub>	| <sub>No</sub>	| <sub>[A-z][0-9]</sub>	 | <sub>usp_LogicalName</sub> |
+| <sub>Scalar User-Defined Function</sub>	| <sub>FN</sub>	| <sub>PascalCase</sub>	| <sub>128</sub>	| <sub>No</sub>	| <sub>udf_</sub>	| <sub>No</sub>	| <sub>[A-z][0-9]</sub>	 | <sub>udf_FunctionLogicalName</sub> |
+| <sub>Table-Valued Function</sub>	| <sub>FN</sub>	| <sub>PascalCase</sub>	| <sub>128</sub>	| <sub>No</sub>	| <sub>tvf_</sub>	| <sub>No</sub>	| <sub>[A-z][0-9]</sub>	 | <sub>tvf_FunctionLogicalName</sub> |
+| <sub>User-Defined Table Types</sub>	| <sub>TT</sub>	| <sub>PascalCase</sub>	| <sub>128</sub>	| <sub>No</sub>	| <sub>TT_</sub>	| <sub>No</sub>	| <sub>[A-z][0-9]</sub>	 | <sub>TT_LogicalName</sub> |
+| <sub>Synonym</sub>	| <sub>SN</sub>	| <sub>camelCase</sub>	| <sub>128</sub>	| <sub>No</sub>	| <sub>sy_</sub>	| <sub>No</sub>	| <sub>[A-z][0-9]</sub>	 | <sub>sy_logicalName</sub> |
+| <sub>Sequence</sub>	| <sub>SO</sub>	| <sub>PascalCase</sub>	| <sub>128</sub>	| <sub>No</sub>	| <sub>sq_</sub>	| <sub>No</sub>	| <sub>[A-z][0-9]</sub>	 | <sub>sq_TableName</sub> |
+| <sub>CLR Assembly</sub>	| <sub></sub>	| <sub>PascalCase</sub>	| <sub>128</sub>	| <sub>No</sub>	| <sub>CA</sub>	| <sub>Yes</sub>	| <sub>[A-z][0-9]</sub>	 | <sub>CALogicalName</sub> |
+| <sub>CLR Stored Procedures</sub>	| <sub>PC</sub>	| <sub>PascalCase</sub>	| <sub>128</sub>	| <sub>No</sub>	| <sub>pc_</sub>	| <sub>Yes</sub>	| <sub>[A-z][0-9]</sub>	 | <sub>pc_CAName_LogicalName</sub> |
+| <sub>CLR Scalar User-Defined Function</sub>	| <sub></sub>	| <sub>PascalCase</sub>	| <sub>128</sub>	| <sub>No</sub>	| <sub>cudf_</sub>	| <sub>No</sub>	| <sub>[A-z][0-9]</sub>	 | <sub>cudf_CAName_LogicalName</sub> |
+| <sub>CLR Table-Valued Function</sub>	| <sub></sub>	| <sub>PascalCase</sub>	| <sub>128</sub>	| <sub>No</sub>	| <sub>ctvf_</sub>	| <sub>No</sub>	| <sub>[A-z][0-9]</sub>	 | <sub>ctvf_CAName_LogicalName</sub> |
+| <sub>CLR User-Defined Aggregates</sub>	| <sub></sub>	| <sub>PascalCase</sub>	| <sub>128</sub>	| <sub>No</sub>	| <sub>ca_</sub>	| <sub>No</sub>	| <sub>[A-z][0-9]</sub>	 | <sub>ca_CAName_LogicalName</sub> |
+| <sub>CLR User-Defined Types</sub>	| <sub></sub>	| <sub>PascalCase</sub>	| <sub>128</sub>	| <sub>No</sub>	| <sub>ct_</sub>	| <sub>No</sub>	| <sub>[A-z][0-9]</sub>	 | <sub>ct_CAName_LogicalName</sub> |
+| <sub>CLR Triggers</sub>	| <sub></sub>	| <sub>PascalCase</sub>	| <sub>128</sub>	| <sub>No</sub>	| <sub>ctr_</sub>	| <sub>No</sub>	| <sub>[A-z][0-9]</sub>	 | <sub>ctr_CAName_LogicalName</sub> |
 
 ### T-SQL Code Style
 MS SQL T-SQL Best Practices and Programming Guidelines
