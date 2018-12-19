@@ -9,8 +9,8 @@ Official Reference and useful links
 | <sub>Database Trigger</sub>	| <sub></sub>	| <sub>PascalCase</sub>	| <sub>50</sub>	| <sub>No</sub>	| <sub>TR_</sub>	| <sub>Yes</sub>	| <sub>[A-z]</sub>	 | <sub>TR_CheckLogin</sub> |
 | <sub>Schema</sub>	| <sub></sub>	| <sub>lowercase</sub>	| <sub>30</sub>	| <sub>No</sub>	| <sub>No</sub>	| <sub>Yes</sub>	| <sub>[A-z][0-9]</sub>	 | <sub>myschema</sub> |
 | <sub>File Table</sub>	| <sub></sub>	| <sub>PascalCase</sub>	| <sub>128</sub>	| <sub>No</sub>	| <sub>FT_</sub>	| <sub>Yes</sub>	| <sub>[A-z][0-9]</sub>	 | <sub>FT_MyTable</sub> |
-| <sub>Global Temporary Table</sub>	| <sub></sub>	| <sub>PascalCase</sub>	| <sub>117</sub>	| <sub>No</sub>	| <sub>No</sub>	| <sub>Yes</sub>	| <sub>##[A-z][0-9]</sub>	 | <sub>##MyTable</sub> |
-| <sub>Local Temporary Table</sub>	| <sub></sub>	| <sub>PascalCase</sub>	| <sub>116</sub>	| <sub>No</sub>	| <sub>No</sub>	| <sub>Yes</sub>	| <sub>#[A-z][0-9]</sub>	 | <sub>#MyTable</sub> |
+| <sub>Global Temporary Table</sub>	| <sub></sub>	| <sub>PascalCase</sub>	| <sub>117</sub>	| <sub>No</sub>	| <sub>No</sub>	| <sub>Yes</sub>	| <sub>##[A-z] [0-9]</sub>	 | <sub>##MyTable</sub> |
+| <sub>Local Temporary Table</sub>	| <sub></sub>	| <sub>PascalCase</sub>	| <sub>116</sub>	| <sub>No</sub>	| <sub>No</sub>	| <sub>Yes</sub>	| <sub>#[A-z] [0-9]</sub>	 | <sub>#MyTable</sub> |
 | <sub>Table</sub>	| <sub>U</sub>	| <sub>PascalCase</sub>	| <sub>128</sub>	| <sub>No</sub>	| <sub>No</sub>	| <sub>Yes</sub>	| <sub>[A-z][0-9]</sub>	 | <sub>MyTable</sub> |
 | <sub>Table Column</sub>	| <sub></sub>	| <sub>PascalCase</sub>	| <sub>128</sub>	| <sub>No</sub>	| <sub>No</sub>	| <sub>Yes</sub>	| <sub>[A-z][0-9]</sub>	 | <sub>MyColumn</sub> |
 | <sub>Table Default Values</sub>	| <sub>D</sub>	| <sub>PascalCase</sub>	| <sub>128</sub>	| <sub>No</sub>	| <sub>DF_</sub>	| <sub>Yes</sub>	| <sub>[A-z][0-9]</sub>	 | <sub>DF_MyTable_MyColumn</sub> |
