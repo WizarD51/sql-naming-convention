@@ -39,8 +39,8 @@ Official Reference and useful links
 ### T-SQL Code Style
 MS SQL T-SQL Best Practices and Programming Guidelines:
 - Delimiters: spaces (not tabs).
-- All finished expressions should have ; at the end.
-- The first argument in SELECT expression should be on the next line with it (see ex below).
+- All finished expressions should have `;` at the end.
+- The first argument in `SELECT` expression should be on the next line with it (see ex below).
 - Arguments are divided by line breaks, commas should be placed before an argument (see ex below).
 `
 SELECT 
@@ -48,15 +48,16 @@ SELECT
   ,LastName 
 FROM …
 `
-- Use TOP function with brackets because TOP has supports use of an expression, such as (@Rows*2), or a subquery:
+- Use `TOP` function with brackets because `TOP` has supports use of an expression, such as `(@Rows*2)`, or a subquery:
 ` SELECT TOP(100) LastName …. `
-Also TOP without brackets does not work with ` UPDATE ` and ` DELETE ` statements.
+Also `TOP` without brackets does not work with ` UPDATE ` and ` DELETE ` statements.
 `
 -- Not working without ()
 DECLARE @n int = 1;
 SELECT TOP@n name FROM sys.objects;
 `
-- Keywords and data types declaration should be in UPPERCASE
+- Keywords should be in UPPERCASE
+- Data types declaration should be in lowercase
 - ` FROM, WHERE, INTO, JOIN, GROUP BY, ORDER BY ` expressions should be aligned so, that all their arguments are placed under each other 
 `
 WITH CTE_MyCTE AS (
@@ -77,7 +78,8 @@ SELECT
   FROM CTE_MyCTE AS cte
  ORDER BY t2.Value2;
 `
-- All objects must used with schema names but without database and server name: ``` FROM dbo.Table ```
+- All objects must used with schema names but without database and server name: ``` FROM dbo.Table ``` (
+if it is not required in a specific case)
 - Avoid using ` INSERT INTO ` a permanent table with ` ORDER BY `
 - Avoid using shortname (`wk, yyyy, d ` etc.) with date/time operations, use full names: `month, day, year`
 - Parameters name should be in **camelCase**: `@textParam`
