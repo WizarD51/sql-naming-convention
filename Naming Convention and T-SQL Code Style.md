@@ -2,7 +2,6 @@
 Official Reference and useful links
 
 ### MS SQL Object Naming Convention
-
 | <sub>Object</sub>	| <sub>Code</sub>	| <sub>Notation</sub>	| <sub>Length</sub>	| <sub>Plural</sub>	| <sub>Prefix</sub>	| <sub>Abbreviation</sub>	| <sub> Mask </sub>	 | <sub>Example</sub> |
 | ------ | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 					
 | <sub>Database</sub>	| <sub></sub>	| <sub>PascalCase</sub>	| <sub>30</sub>	| <sub>No</sub>	| <sub>No</sub>	| <sub>Yes</sub>	| <sub>[A-z]</sub>	 | <sub>MyDatabase</sub> |
@@ -38,4 +37,14 @@ Official Reference and useful links
 | <sub>CLR Triggers</sub>	| <sub></sub>	| <sub>PascalCase</sub>	| <sub>128</sub>	| <sub>No</sub>	| <sub>ctr_</sub>	| <sub>No</sub>	| <sub>[A-z][0-9]</sub>	 | <sub>ctr_CAName_LogicalName</sub> |
 
 ### T-SQL Code Style
-MS SQL T-SQL Best Practices and Programming Guidelines
+MS SQL T-SQL Best Practices and Programming Guidelines:
+- Delimiters: spaces (not tabs)
+- All finished expressions should have ; at the end
+- The first argument in SELECT expression should be on the next line with it:
+```
+SELECT 
+  FirstName
+  ,LastName 
+FROM …
+```
+- 
