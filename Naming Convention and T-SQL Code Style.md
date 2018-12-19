@@ -1,14 +1,14 @@
 ## Naming Convention and T-SQL Code Style
 Official Reference and useful links:
-- [Transact-SQL Formatting Standards] (https://www.red-gate.com/simple-talk/sql/t-sql-programming/transact-sql-formatting-standards-coding-styles/) (by Robert Sheldon)
-- [How I Write SQL, Part 1: Naming Conventions] (https://launchbylunch.com/posts/2014/Feb/16/sql-naming-conventions/)
-- [Subjectivity Naming Standards] (https://blogs.sentryone.com/aaronbertrand/subjectivity-naming-standards/) (by Aaron Bertrand)
-- [Writing Readable SQL] (https://www.codeproject.com/Articles/126380/Writing-Readable-SQL) (by Red Gate)
-- [SQL Style Guide] (https://www.sqlstyle.guide/) (by Simon Holywell)
-- [sys.objects] (https://docs.microsoft.com/en-us/sql/relational-databases/system-catalog-views/sys-objects-transact-sql?view=sql-server-2017)
-- [CLR Stored Procedures] (https://docs.microsoft.com/en-us/previous-versions/sql/sql-server-2008/ms131094(v=sql.100))
-- [Sql Coding Style] (http://wiki.c2.com/?SqlCodingStyle)
-- [SQL Server Code Review Checklist for Developers] (by Samir Behara)
+- [Transact-SQL Formatting Standards](https://www.red-gate.com/simple-talk/sql/t-sql-programming/transact-sql-formatting-standards-coding-styles/) (by Robert Sheldon)
+- [How I Write SQL, Part 1: Naming Conventions](https://launchbylunch.com/posts/2014/Feb/16/sql-naming-conventions/)
+- [Subjectivity Naming Standards](https://blogs.sentryone.com/aaronbertrand/subjectivity-naming-standards/) (by Aaron Bertrand)
+- [Writing Readable SQL](https://www.codeproject.com/Articles/126380/Writing-Readable-SQL) (by Red Gate)
+- [SQL Style Guide](https://www.sqlstyle.guide/) (by Simon Holywell)
+- [sys.objects](https://docs.microsoft.com/en-us/sql/relational-databases/system-catalog-views/sys-objects-transact-sql?view=sql-server-2017)
+- [CLR Stored Procedures](https://docs.microsoft.com/en-us/previous-versions/sql/sql-server-2008/ms131094(v=sql.100))
+- [Sql Coding Style](http://wiki.c2.com/?SqlCodingStyle)
+- [SQL Server Code Review Checklist for Developers](https://www.sqlshack.com/sql-server-code-review-checklist-for-developers/) (by Samir Behara)
 
 ### MS SQL Object Naming Convention
 | <sub>Object</sub>	| <sub>Code</sub>	| <sub>Notation</sub>	| <sub>Length</sub>	| <sub>Plural</sub>	| <sub>Prefix</sub>	| <sub>Abbreviation</sub>	| <sub> Mask </sub>	 | <sub>Example</sub> |
