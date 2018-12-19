@@ -38,9 +38,10 @@ Official Reference and useful links
 
 ### T-SQL Code Style
 MS SQL T-SQL Best Practices and Programming Guidelines:
-- Delimiters: spaces (not tabs)
-- All finished expressions should have ; at the end
-- The first argument in SELECT expression should be on the next line with it:
+- Delimiters: spaces (not tabs).
+- All finished expressions should have ; at the end.
+- The first argument in SELECT expression should be on the next line with it (see ex below).
+- Arguments are divided by line breaks, commas should be placed before an argument (see ex below).
 ```
 SELECT 
   FirstName
