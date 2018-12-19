@@ -59,7 +59,7 @@ SELECT TOP@n name FROM sys.objects;
 - Keywords should be in UPPERCASE
 - Data types declaration should be in lowercase
 - ` FROM, WHERE, INTO, JOIN, GROUP BY, ORDER BY ` expressions should be aligned so, that all their arguments are placed under each other 
-`
+```
 WITH CTE_MyCTE AS (
     SELECT 
          t1.Value1 AS Val1
@@ -77,8 +77,8 @@ SELECT
   INTO #TempTable
   FROM CTE_MyCTE AS cte
  ORDER BY t2.Value2;
-`
-- All objects must used with schema names but without database and server name: ``` FROM dbo.Table ``` (
+```
+- All objects must used with schema names but without database and server name: ` FROM dbo.Table ` (
 if it is not required in a specific case)
 - Avoid using ` INSERT INTO ` a permanent table with ` ORDER BY `
 - Avoid using shortname (`wk, yyyy, d ` etc.) with date/time operations, use full names: `month, day, year`
