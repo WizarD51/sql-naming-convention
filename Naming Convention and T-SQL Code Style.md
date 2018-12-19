@@ -3,7 +3,7 @@ Official Reference and useful links
 
 ### MS SQL Object Naming Convention
 
-| <sub>Object</sub>	| <sub>Code</sub>	| <sub>Notation</sub>	| <sub>Length</sub>	| <sub>Plural</sub>	| <sub>Prefix</sub>	| <sub>Abbreviation</sub>	| <sub>    Mask   </sub>	 | <sub>Example</sub> |
+| <sub>Object</sub>	| <sub>Code</sub>	| <sub>Notation</sub>	| <sub>Length</sub>	| <sub>Plural</sub>	| <sub>Prefix</sub>	| <sub>Abbreviation</sub>	| <sub> Mask </sub>	 | <sub>Example</sub> |
 | ------ | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 					
 | <sub>Database</sub>	| <sub></sub>	| <sub>PascalCase</sub>	| <sub>30</sub>	| <sub>No</sub>	| <sub>No</sub>	| <sub>Yes</sub>	| <sub>[A-z]</sub>	 | <sub>MyDatabase</sub> |
 | <sub>Database Trigger</sub>	| <sub></sub>	| <sub>PascalCase</sub>	| <sub>50</sub>	| <sub>No</sub>	| <sub>TR_</sub>	| <sub>Yes</sub>	| <sub>[A-z]</sub>	 | <sub>TR_CheckLogin</sub> |
